@@ -1,0 +1,15 @@
+# Local Terraform state and caches
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# User-specific configuration (keep the .example versions committed)
+terraform.tfvars
+*.auto.tfvars
+backend.hcl
+
+# Crash logs and plans
+crash.log
+crash.*.log
+*.tfplan

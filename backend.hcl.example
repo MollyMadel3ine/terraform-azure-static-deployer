@@ -1,0 +1,7 @@
+# Copy this file to backend.hcl and fill in your own values, then run:
+#   terraform init -backend-config=backend.hcl
+
+resource_group_name  = "<your-resource-group>"
+storage_account_name = "<your-state-storage-account>"
+container_name       = "tfstate"
+key                  = "static-deployer.tfstate"

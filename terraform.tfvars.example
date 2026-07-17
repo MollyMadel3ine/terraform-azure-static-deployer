@@ -1,0 +1,25 @@
+# Copy to terraform.tfvars and fill in your values.
+
+resource_group_name  = "<your-resource-group>"
+storage_account_name = "<globally-unique-name>"
+source_dir           = "./site"
+
+# --- Common options ---
+
+# Deploy as a public static website (uploads to the $web container):
+# enable_static_website = true
+
+# Or upload into a plain container:
+# container_name        = "content"
+# container_access_type = "private"
+
+# Reuse an existing storage account instead of creating one:
+# create_storage_account = false
+
+# Only upload certain files:
+# file_pattern = "**/*.html"
+
+# tags = {
+#   project = "my-site"
+#   env     = "prod"
+# }
